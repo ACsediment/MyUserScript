@@ -7,13 +7,13 @@
 // @include     https://webcache.googleusercontent.com/search?*
 // @version 0.0.1.20140517140355
 // ==/UserScript==
-// this is fork form https://greasyfork.org/zh-CN/scripts/1108-google-cache-browser
-// written by muzuiget
+// fork from muzuiget https://greasyfork.org/zh-CN/scripts/1108-google-cache-browser
 
 var convertCacheLinks = function(url) {
-    var selector = 'body > div[style="position:relative"] a';
+    var selector = 'body > div[style="position:relative;"] a';
     var links = document.querySelectorAll(selector);
     var i, link;
+    console.log(links.length);
     for (i = 0; i < links.length; i += 1) {
         link = links[i];
         link.href = location.href.replace(url, encodeURIComponent(link.href));
