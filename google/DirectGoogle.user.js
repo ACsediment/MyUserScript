@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Direct Google
 // @namespace    http://userscripts.org/users/92143
-// @version      2.3
+// @version      2.4
 // @description  (移除谷歌重定向并解析出缓存链接)Removes Google redirects and exposes "Cached" links.
 // @include      /^https?\:\/\/(www|news|maps|docs|cse|encrypted)\.google\./
 // @author       zanetu
@@ -125,3 +125,10 @@ else {
         modifyGoogle();
     }, 500);
 }
+
+//added by sediment
+GM_addStyle ( `
+    .iUh30 {
+        font-size: 12px !important;
+    }
+` );
