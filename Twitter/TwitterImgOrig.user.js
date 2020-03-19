@@ -2,14 +2,14 @@
 // @name         Twitter orig img
 // @namespace    https://github.com/ACsediment/MyUserScript
 // @version      0.2
-// @description  重定向推特照片到原图尺寸
+// @description  Redirecting Twitter images to original size.重定向推特照片到原图
 // @include      https://pbs.twimg.com/media/*
 // @include      http://pbs.twimg.com/media/*
 // @author       Acsediment
 // @license      GPL version 2 or any later version; http://www.gnu.org/licenses/gpl-2.0.txt
 // ==/UserScript==
 
-var pathName=location.pathname;
+var pathName = location.pathname;
 var currentHref = location.href;
 var newHref;
 
